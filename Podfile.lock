@@ -1,0 +1,23 @@
+PODS:
+  - CryptoSwift (0.8.1)
+  - EtherS (0.0.2):
+    - CryptoSwift
+    - Geth
+  - Geth (1.7.3)
+
+DEPENDENCIES:
+  - EtherS (from `/Users/Sameer/Documents/Developer/radicalappllc/EtherS`)
+
+EXTERNAL SOURCES:
+  EtherS:
+    :branch: master
+    :path: /Users/Sameer/Documents/Developer/radicalappllc/EtherS
+
+SPEC CHECKSUMS:
+  CryptoSwift: 4b07d5b508c1eb67bfa314a727b705f8048a85de
+  EtherS: 85afc45ec6dc264e0e10b380551733456a5307b4
+  Geth: 45a08eeef7a20e58dfc09a455563ffe210941a96
+
+PODFILE CHECKSUM: 719c4165760ff8f741c1c09b7720e316e486440a
+
+COCOAPODS: 1.4.0

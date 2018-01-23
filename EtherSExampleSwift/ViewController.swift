@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import Geth
+import EtherS
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let value = GethNewBigInt(5)
+        
+        let function = EthFunction(name: "Sam", inputParameters: [value!])
+        let encodedData = EtherS.encode(function)
+        
+        print("Encoded Data is \(encodedData.toHexString())")
     }
 
     override func didReceiveMemoryWarning() {

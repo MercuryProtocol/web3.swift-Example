@@ -12,9 +12,12 @@
 		427BDE262016D5490054F870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427BDE242016D5490054F870 /* Main.storyboard */; };
 		427BDE282016D5490054F870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427BDE272016D5490054F870 /* Assets.xcassets */; };
 		427BDE2B2016D5490054F870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427BDE292016D5490054F870 /* LaunchScreen.storyboard */; };
+		49C4CDD1B22A28CBFCD56194 /* Pods_EtherSExampleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0512260FA3C1040DFB92D673 /* Pods_EtherSExampleSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0512260FA3C1040DFB92D673 /* Pods_EtherSExampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtherSExampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06C919BFA2E1CC0495ACFD3C /* Pods-EtherSExampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtherSExampleSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EtherSExampleSwift/Pods-EtherSExampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		427BDE1D2016D5490054F870 /* EtherSExampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EtherSExampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		427BDE202016D5490054F870 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		427BDE222016D5490054F870 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		427BDE272016D5490054F870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		427BDE2A2016D5490054F870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		427BDE2C2016D5490054F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C8E0A631987F4D6BEC250EA /* Pods-EtherSExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtherSExampleSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtherSExampleSwift/Pods-EtherSExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C4CDD1B22A28CBFCD56194 /* Pods_EtherSExampleSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				427BDE1F2016D5490054F870 /* EtherSExampleSwift */,
 				427BDE1E2016D5490054F870 /* Products */,
+				954D701ED141A9B7250D14BA /* Pods */,
+				94BA2396B38958343E94B0F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = EtherSExampleSwift;
 			sourceTree = "<group>";
 		};
+		94BA2396B38958343E94B0F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0512260FA3C1040DFB92D673 /* Pods_EtherSExampleSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		954D701ED141A9B7250D14BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06C919BFA2E1CC0495ACFD3C /* Pods-EtherSExampleSwift.debug.xcconfig */,
+				6C8E0A631987F4D6BEC250EA /* Pods-EtherSExampleSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 427BDE2F2016D5490054F870 /* Build configuration list for PBXNativeTarget "EtherSExampleSwift" */;
 			buildPhases = (
+				DE8957E0DD4463BF6B4CC3F2 /* [CP] Check Pods Manifest.lock */,
 				427BDE192016D5490054F870 /* Sources */,
 				427BDE1A2016D5490054F870 /* Frameworks */,
 				427BDE1B2016D5490054F870 /* Resources */,
+				001CA61593D85CCC7A6926AD /* [CP] Embed Pods Frameworks */,
+				8808FAB239381F279F04F573 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		001CA61593D85CCC7A6926AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EtherSExampleSwift/Pods-EtherSExampleSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtherSExampleSwift/Pods-EtherSExampleSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8808FAB239381F279F04F573 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtherSExampleSwift/Pods-EtherSExampleSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE8957E0DD4463BF6B4CC3F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EtherSExampleSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		427BDE192016D5490054F870 /* Sources */ = {
@@ -272,6 +353,7 @@
 		};
 		427BDE302016D5490054F870 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06C919BFA2E1CC0495ACFD3C /* Pods-EtherSExampleSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -288,6 +370,7 @@
 		};
 		427BDE312016D5490054F870 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C8E0A631987F4D6BEC250EA /* Pods-EtherSExampleSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
