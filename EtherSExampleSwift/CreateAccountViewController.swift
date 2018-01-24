@@ -13,9 +13,9 @@ class CreateAccountViewController: UIViewController {
     private let _toTransferSegueIdentifier = "createAccountToTransferSegue"
     
     @IBAction func createAccountAction(_ sender: Any) {
-        let coordinator = EthAccountCoordinator.default
+        let (_, account) = EthAccountCoordinator.default.setup(EthAccountConfiguration.default)
         
-        if coordinator.account != nil {
+        if account != nil {
             self.performSegue(withIdentifier: _toTransferSegueIdentifier, sender: nil)
         } else {
             print("Error creating account.")
