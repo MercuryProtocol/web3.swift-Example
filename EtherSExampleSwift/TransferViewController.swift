@@ -12,6 +12,7 @@ import EtherS
 import Alamofire
 
 class TransferViewController: UIViewController {
+    @IBOutlet weak var accountAddressTextField: UITextField!
     @IBOutlet weak var contractAddressTextField: UITextField!
     @IBOutlet weak var toAccountTextField: UITextField!
     @IBOutlet weak var amountTextField: UITextField!
@@ -38,12 +39,11 @@ class TransferViewController: UIViewController {
         contractAddressTextField.text = Constants.contractAddress
         toAccountTextField.text = Constants.toAccountAddress
         amountTextField.text = String(Constants.transferAmount)
+        
+        accountAddressTextField.text = EthAccountCoordinator.default.account?.getAddress().getHex()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-    }
+    
 
     @IBAction func transferAction(_ sender: UIButton) {
         guard let contractAddress = contractAddressTextField.text, let toAccountAddress = toAccountTextField.text, let amount = amountTextField.text else {
@@ -93,11 +93,12 @@ extension TransferViewController {
                 
                 executeContract(encodedSignedTransaction, completion: { (result, error) in
                     if let error = error {
-                        print("Failed to get valid response from server ")
+                        print("Failed to get valid response from server \(error)")
                         return
                     }
                     guard let transactionHash = result else {
                         print("Failed to get valid result froms server")
+                        return
                     }
                     
                     print("Result of transfer is \(transactionHash)")
