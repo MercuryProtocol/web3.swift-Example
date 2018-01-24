@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (4.6.0)
   - CryptoSwift (0.8.1)
-  - EtherS (0.0.2):
+  - EtherS (0.0.5):
     - CryptoSwift
     - Geth
   - Geth (1.7.3)
@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   CryptoSwift: 4b07d5b508c1eb67bfa314a727b705f8048a85de
-  EtherS: 85afc45ec6dc264e0e10b380551733456a5307b4
+  EtherS: 3d2d4b9c3b4b573f5b87ec1a2883b48a3efea01c
   Geth: 45a08eeef7a20e58dfc09a455563ffe210941a96
 
 PODFILE CHECKSUM: 2bbc22e4ad8b0e513318594093ac145343db9ca1

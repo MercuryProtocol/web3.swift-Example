@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ov2-ac-bJz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -20,6 +20,38 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Create Account View Controller-->
+        <scene sceneID="5d6-bN-Eq7">
+            <objects>
+                <viewController id="Ov2-ac-bJz" customClass="CreateAccountViewController" customModule="EtherSExampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="232-Th-oJ6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOr-rm-4Dq">
+                                <rect key="frame" x="98.5" y="314.5" width="178" height="37"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                <state key="normal" title="Use Default Account"/>
+                                <connections>
+                                    <action selector="createAccountAction:" destination="Ov2-ac-bJz" eventType="touchUpInside" id="XNb-mZ-4fa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jOr-rm-4Dq" firstAttribute="centerX" secondItem="232-Th-oJ6" secondAttribute="centerX" id="9gv-CO-BzO"/>
+                            <constraint firstItem="jOr-rm-4Dq" firstAttribute="centerY" secondItem="232-Th-oJ6" secondAttribute="centerY" id="Rab-Rq-oV7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="opz-ba-S7q"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="createAccountToTransferSegue" id="Fib-AQ-Vag"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kd5-rV-paz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-274.39999999999998" y="44.527736131934034"/>
+        </scene>
         <!--Transfer View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -105,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+            <point key="canvasLocation" x="474" y="45"/>
         </scene>
     </scenes>
 </document>

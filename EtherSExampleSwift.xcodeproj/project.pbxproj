@@ -12,7 +12,8 @@
 		427BDE262016D5490054F870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427BDE242016D5490054F870 /* Main.storyboard */; };
 		427BDE282016D5490054F870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427BDE272016D5490054F870 /* Assets.xcassets */; };
 		427BDE2B2016D5490054F870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427BDE292016D5490054F870 /* LaunchScreen.storyboard */; };
-		427BDE332017C4490054F870 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427BDE322017C4490054F870 /* String+Extension.swift */; };
+		427BDE3E20181D060054F870 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427BDE3D20181D060054F870 /* CreateAccountViewController.swift */; };
+		427BDE40201911D20054F870 /* GethBigInt+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427BDE3F201911D20054F870 /* GethBigInt+Extension.swift */; };
 		49C4CDD1B22A28CBFCD56194 /* Pods_EtherSExampleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0512260FA3C1040DFB92D673 /* Pods_EtherSExampleSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +27,8 @@
 		427BDE272016D5490054F870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		427BDE2A2016D5490054F870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		427BDE2C2016D5490054F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		427BDE322017C4490054F870 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		427BDE3D20181D060054F870 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		427BDE3F201911D20054F870 /* GethBigInt+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GethBigInt+Extension.swift"; sourceTree = "<group>"; };
 		6C8E0A631987F4D6BEC250EA /* Pods-EtherSExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtherSExampleSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtherSExampleSwift/Pods-EtherSExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,10 +65,10 @@
 		427BDE1F2016D5490054F870 /* EtherSExampleSwift */ = {
 			isa = PBXGroup;
 			children = (
+				427BDE3C20181CD80054F870 /* Controllers */,
 				427BDE242016D5490054F870 /* Main.storyboard */,
-				427BDE322017C4490054F870 /* String+Extension.swift */,
 				427BDE352017D8B20054F870 /* Supporting Files */,
-				427BDE222016D5490054F870 /* TransferViewController.swift */,
+				427BDE3F201911D20054F870 /* GethBigInt+Extension.swift */,
 			);
 			path = EtherSExampleSwift;
 			sourceTree = "<group>";
@@ -80,6 +82,15 @@
 				427BDE272016D5490054F870 /* Assets.xcassets */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		427BDE3C20181CD80054F870 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				427BDE222016D5490054F870 /* TransferViewController.swift */,
+				427BDE3D20181D060054F870 /* CreateAccountViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		94BA2396B38958343E94B0F3 /* Frameworks */ = {
@@ -230,8 +241,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				427BDE3E20181D060054F870 /* CreateAccountViewController.swift in Sources */,
 				427BDE232016D5490054F870 /* TransferViewController.swift in Sources */,
-				427BDE332017C4490054F870 /* String+Extension.swift in Sources */,
+				427BDE40201911D20054F870 /* GethBigInt+Extension.swift in Sources */,
 				427BDE212016D5490054F870 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

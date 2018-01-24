@@ -50,10 +50,17 @@ class TransferViewController: UIViewController {
             print("Invalid Entry")
             return
         }
+        guard let gethAmount = GethBigInt.bigInt(amount) else {
+            print("Invalid amount")
+            return
+        }
         if contractAddress.isHexAddress() && toAccountAddress.isHexAddress() {
+            var addressError: NSError? = nil
+            let gethContractAddress: GethAddress! = GethNewAddressFromHex(contractAddress, &addressError)
+            let gethToAccountAddress: GethAddress! = GethNewAddressFromHex(toAccountAddress, &addressError)
             
             
-            
+            _transfer(contractAddress: gethContractAddress, toAccountAddress: gethToAccountAddress, amount: gethAmount)
         } else {
             print("Addresss Invalid")
         }
@@ -63,26 +70,38 @@ class TransferViewController: UIViewController {
         self.view.endEditing(true)
     }
     
-    private func _transfer(contractAddress: GethAddress, toAccountAddress: GethAddress, amount: GethBigInt) {
+    
+    
+}
+
+// MARK:- Ethereum Encoding
+
+extension TransferViewController {
+    
+    fileprivate func _transfer(contractAddress: GethAddress, toAccountAddress: GethAddress, amount: GethBigInt) {
         let transferFunction = EthFunction(name: Constants.transferFunctionName, inputParameters: [toAccountAddress, amount])
         let encodedTransferFunction = EtherS.encode(transferFunction)
         
-        var _toAddressError: NSError? = nil
-        var nonce: Int64 = 1
-        
-        // Grab is from ethereum client or through web service call to your server
-        let keystore: GethKeyStore! = GethNewKeyStore("", 0, 0)!
-        
         do {
-            let account: GethAccount! = try keystore.getAccounts().get(0)
-            let ethClient: GethEthereumClient! = GethNewEthereumClient("", &_toAddressError)!
-            let context = GethNewContext()
-            try ethClient.getPendingNonce(at: context, account: account.getAddress(), nonce: &nonce)
-            let signedTransaction = EtherS.sign(address: contractAddress, encodedFunctionData: encodedTransferFunction, nonce: nonce, gasLimit: Constants.gasLimit, gasPrice: Constants.gasPrice, keystore: keystore, account: account, passphrase: "qwerty")
+            let nonce: Int64 = 4 // Update this to valid nonce
+            
+            let signedTransaction = EtherS.sign(address: contractAddress, encodedFunctionData: encodedTransferFunction, nonce: nonce, gasLimit: Constants.gasLimit, gasPrice: Constants.gasPrice)
             
             if let signedTransactionData = try signedTransaction?.encodeRLP() {
                 let encodedSignedTransaction = signedTransactionData.base64EncodedString()
+                print("Encoded transaction sent to server \(encodedSignedTransaction)")
                 
+                executeContract(encodedSignedTransaction, completion: { (result, error) in
+                    if let error = error {
+                        print("Failed to get valid response from server ")
+                        return
+                    }
+                    guard let transactionHash = result else {
+                        print("Failed to get valid result froms server")
+                    }
+                    
+                    print("Result of transfer is \(transactionHash)")
+                })
                 
             } else {
                 print("Failed to sign/encode")
@@ -94,12 +113,23 @@ class TransferViewController: UIViewController {
     
 }
 
-
 // MARK:- Web API calls
 
 extension TransferViewController {
     
+    
     func getNonce(_ accountAddress: String, completion: @escaping (Int64?, Error?) -> Void) {
+        
+        // If you have geth ethereum client connected to node you can get nonce
+        /*
+         let ethClient: GethEthereumClient! = GethNewEthereumClient("", &_toAddressError)!
+         let context = GethNewContext()
+         try ethClient.getPendingNonce(at: context, account: account.getAddress(), nonce: &nonce)
+         */
+        
+        
+        // Here we have server API which takes your account address as parameter and returns nonce
+        
         let urlString = Constants.serverURL + Constants.nonceURL
         
         let parameters: Parameters = [
