@@ -13,13 +13,13 @@
 		427BDE282016D5490054F870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427BDE272016D5490054F870 /* Assets.xcassets */; };
 		427BDE2B2016D5490054F870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427BDE292016D5490054F870 /* LaunchScreen.storyboard */; };
 		427BDE3E20181D060054F870 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427BDE3D20181D060054F870 /* CreateAccountViewController.swift */; };
-		49C4CDD1B22A28CBFCD56194 /* Pods_EtherSExampleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0512260FA3C1040DFB92D673 /* Pods_EtherSExampleSwift.framework */; };
+		512B3F36463EBF6F33C6046D /* Pods_web3_swiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE952733B3DFAEBF6A2A5E0A /* Pods_web3_swiftExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0512260FA3C1040DFB92D673 /* Pods_EtherSExampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtherSExampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		06C919BFA2E1CC0495ACFD3C /* Pods-EtherSExampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtherSExampleSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EtherSExampleSwift/Pods-EtherSExampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		427BDE1D2016D5490054F870 /* EtherSExampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EtherSExampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03B093C44E102665670B0CD3 /* Pods-web3.swiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-web3.swiftExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-web3.swiftExample/Pods-web3.swiftExample.release.xcconfig"; sourceTree = "<group>"; };
+		1576B927BA431A481B9A0693 /* Pods-web3.swiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-web3.swiftExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-web3.swiftExample/Pods-web3.swiftExample.debug.xcconfig"; sourceTree = "<group>"; };
+		427BDE1D2016D5490054F870 /* web3.swiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = web3.swiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		427BDE202016D5490054F870 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		427BDE222016D5490054F870 /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		427BDE252016D5490054F870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -27,7 +27,7 @@
 		427BDE2A2016D5490054F870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		427BDE2C2016D5490054F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		427BDE3D20181D060054F870 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
-		6C8E0A631987F4D6BEC250EA /* Pods-EtherSExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtherSExampleSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtherSExampleSwift/Pods-EtherSExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
+		BE952733B3DFAEBF6A2A5E0A /* Pods_web3_swiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_web3_swiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49C4CDD1B22A28CBFCD56194 /* Pods_EtherSExampleSwift.framework in Frameworks */,
+				512B3F36463EBF6F33C6046D /* Pods_web3_swiftExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,29 +45,29 @@
 		427BDE142016D5490054F870 = {
 			isa = PBXGroup;
 			children = (
-				427BDE1F2016D5490054F870 /* EtherSExampleSwift */,
-				94BA2396B38958343E94B0F3 /* Frameworks */,
-				954D701ED141A9B7250D14BA /* Pods */,
+				427BDE1F2016D5490054F870 /* Source */,
 				427BDE1E2016D5490054F870 /* Products */,
+				BA2C6485370EA178D95B54C2 /* Pods */,
+				964A7FEDC78A4AC11422A8E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		427BDE1E2016D5490054F870 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				427BDE1D2016D5490054F870 /* EtherSExampleSwift.app */,
+				427BDE1D2016D5490054F870 /* web3.swiftExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		427BDE1F2016D5490054F870 /* EtherSExampleSwift */ = {
+		427BDE1F2016D5490054F870 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				427BDE3C20181CD80054F870 /* Controllers */,
 				427BDE242016D5490054F870 /* Main.storyboard */,
 				427BDE352017D8B20054F870 /* Supporting Files */,
 			);
-			path = EtherSExampleSwift;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		427BDE352017D8B20054F870 /* Supporting Files */ = {
@@ -90,19 +90,19 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		94BA2396B38958343E94B0F3 /* Frameworks */ = {
+		964A7FEDC78A4AC11422A8E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0512260FA3C1040DFB92D673 /* Pods_EtherSExampleSwift.framework */,
+				BE952733B3DFAEBF6A2A5E0A /* Pods_web3_swiftExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		954D701ED141A9B7250D14BA /* Pods */ = {
+		BA2C6485370EA178D95B54C2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				06C919BFA2E1CC0495ACFD3C /* Pods-EtherSExampleSwift.debug.xcconfig */,
-				6C8E0A631987F4D6BEC250EA /* Pods-EtherSExampleSwift.release.xcconfig */,
+				1576B927BA431A481B9A0693 /* Pods-web3.swiftExample.debug.xcconfig */,
+				03B093C44E102665670B0CD3 /* Pods-web3.swiftExample.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -110,24 +110,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		427BDE1C2016D5490054F870 /* EtherSExampleSwift */ = {
+		427BDE1C2016D5490054F870 /* web3.swiftExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 427BDE2F2016D5490054F870 /* Build configuration list for PBXNativeTarget "EtherSExampleSwift" */;
+			buildConfigurationList = 427BDE2F2016D5490054F870 /* Build configuration list for PBXNativeTarget "web3.swiftExample" */;
 			buildPhases = (
-				DE8957E0DD4463BF6B4CC3F2 /* [CP] Check Pods Manifest.lock */,
+				8E939B43F18B4DAFC98DBE81 /* [CP] Check Pods Manifest.lock */,
 				427BDE192016D5490054F870 /* Sources */,
 				427BDE1A2016D5490054F870 /* Frameworks */,
 				427BDE1B2016D5490054F870 /* Resources */,
-				001CA61593D85CCC7A6926AD /* [CP] Embed Pods Frameworks */,
-				8808FAB239381F279F04F573 /* [CP] Copy Pods Resources */,
+				1AF829274985023D73AEB519 /* [CP] Embed Pods Frameworks */,
+				08BD63C32E0AAA525F1A162E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = EtherSExampleSwift;
+			name = web3.swiftExample;
 			productName = EtherSExampleSwift;
-			productReference = 427BDE1D2016D5490054F870 /* EtherSExampleSwift.app */;
+			productReference = 427BDE1D2016D5490054F870 /* web3.swiftExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -146,7 +146,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 427BDE182016D5490054F870 /* Build configuration list for PBXProject "EtherSExampleSwift" */;
+			buildConfigurationList = 427BDE182016D5490054F870 /* Build configuration list for PBXProject "web3.swiftExample" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -159,7 +159,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				427BDE1C2016D5490054F870 /* EtherSExampleSwift */,
+				427BDE1C2016D5490054F870 /* web3.swiftExample */,
 			);
 		};
 /* End PBXProject section */
@@ -178,27 +178,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		001CA61593D85CCC7A6926AD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EtherSExampleSwift/Pods-EtherSExampleSwift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtherSExampleSwift/Pods-EtherSExampleSwift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8808FAB239381F279F04F573 /* [CP] Copy Pods Resources */ = {
+		08BD63C32E0AAA525F1A162E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -210,10 +190,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtherSExampleSwift/Pods-EtherSExampleSwift-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-web3.swiftExample/Pods-web3.swiftExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DE8957E0DD4463BF6B4CC3F2 /* [CP] Check Pods Manifest.lock */ = {
+		1AF829274985023D73AEB519 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-web3.swiftExample/Pods-web3.swiftExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-web3.swiftExample/Pods-web3.swiftExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E939B43F18B4DAFC98DBE81 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -224,7 +224,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EtherSExampleSwift-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-web3.swiftExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -375,15 +375,15 @@
 		};
 		427BDE302016D5490054F870 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06C919BFA2E1CC0495ACFD3C /* Pods-EtherSExampleSwift.debug.xcconfig */;
+			baseConfigurationReference = 1576B927BA431A481B9A0693 /* Pods-web3.swiftExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3K22BUS8RL;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = EtherSExampleSwift/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.radicalapp.EtherSExampleSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.radicalapp.web3.swiftExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -392,15 +392,15 @@
 		};
 		427BDE312016D5490054F870 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C8E0A631987F4D6BEC250EA /* Pods-EtherSExampleSwift.release.xcconfig */;
+			baseConfigurationReference = 03B093C44E102665670B0CD3 /* Pods-web3.swiftExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3K22BUS8RL;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = EtherSExampleSwift/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.radicalapp.EtherSExampleSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.radicalapp.web3.swiftExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -410,7 +410,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		427BDE182016D5490054F870 /* Build configuration list for PBXProject "EtherSExampleSwift" */ = {
+		427BDE182016D5490054F870 /* Build configuration list for PBXProject "web3.swiftExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				427BDE2D2016D5490054F870 /* Debug */,
@@ -419,7 +419,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		427BDE2F2016D5490054F870 /* Build configuration list for PBXNativeTarget "EtherSExampleSwift" */ = {
+		427BDE2F2016D5490054F870 /* Build configuration list for PBXNativeTarget "web3.swiftExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				427BDE302016D5490054F870 /* Debug */,
