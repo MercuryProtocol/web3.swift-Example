@@ -87,7 +87,7 @@
 				427BDE222016D5490054F870 /* TransferViewController.swift */,
 				427BDE3D20181D060054F870 /* CreateAccountViewController.swift */,
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		94BA2396B38958343E94B0F3 /* Frameworks */ = {

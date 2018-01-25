@@ -8,19 +8,24 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - EtherS (from `/Users/Sameer/Documents/Developer/radicalappllc/EtherS`)
+  - EtherS (from `https://git.cyberdust.com/sameer/EtherS.git`, branch `master`)
 
 EXTERNAL SOURCES:
   EtherS:
     :branch: master
-    :path: /Users/Sameer/Documents/Developer/radicalappllc/EtherS
+    :git: https://git.cyberdust.com/sameer/EtherS.git
+
+CHECKOUT OPTIONS:
+  EtherS:
+    :commit: 18d9acdb4e75380d4281dba686f1843e32973889
+    :git: https://git.cyberdust.com/sameer/EtherS.git
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   CryptoSwift: 4b07d5b508c1eb67bfa314a727b705f8048a85de
-  EtherS: 3d2d4b9c3b4b573f5b87ec1a2883b48a3efea01c
+  EtherS: 8d43d3d08dbbe0f613046f7c7b8c66fbfd0f7669
   Geth: 45a08eeef7a20e58dfc09a455563ffe210941a96
 
-PODFILE CHECKSUM: 2bbc22e4ad8b0e513318594093ac145343db9ca1
+PODFILE CHECKSUM: ba9813d0b760ca20e09803b18917f28be8213ba5
 
 COCOAPODS: 1.4.0

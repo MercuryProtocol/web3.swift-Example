@@ -6,6 +6,5 @@ target 'EtherSExampleSwift' do
 
   pod 'Alamofire'
   # Pods for EtherSExampleSwift
-  pod 'EtherS', :path => '/Users/Sameer/Documents/Developer/radicalappllc/EtherS', :branch => 'master'
-
+  pod 'EtherS', :git => 'https://git.cyberdust.com/sameer/EtherS.git', :branch => 'master'
 end
