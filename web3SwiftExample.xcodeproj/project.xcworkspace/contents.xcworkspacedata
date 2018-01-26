@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:EtherSExampleSwift.xcodeproj">
+      location = "self:/Users/Sameer/Documents/Developer/radicalappllc/web3.swiftExample/web3SwiftExample.xcodeproj">
    </FileRef>
 </Workspace>
