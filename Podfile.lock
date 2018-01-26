@@ -1,31 +1,31 @@
 PODS:
-  - Alamofire (4.6.0)
+  - Alamofire (4.5.0)
   - CryptoSwift (0.8.1)
-  - EtherS (0.0.5):
+  - Geth (1.7.3)
+  - web3swift (0.0.6):
     - CryptoSwift
     - Geth
-  - Geth (1.7.3)
 
 DEPENDENCIES:
-  - Alamofire
-  - EtherS (from `https://git.cyberdust.com/sameer/EtherS.git`, branch `master`)
+  - Alamofire (= 4.5)
+  - web3swift (from `https://git.cyberdust.com/sameer/web3swift.git`, branch `master`)
 
 EXTERNAL SOURCES:
-  EtherS:
+  web3swift:
     :branch: master
-    :git: https://git.cyberdust.com/sameer/EtherS.git
+    :git: https://git.cyberdust.com/sameer/web3swift.git
 
 CHECKOUT OPTIONS:
-  EtherS:
-    :commit: d1f308f6d5451a2c14a31c7303ddd8a104b6230f
-    :git: https://git.cyberdust.com/sameer/EtherS.git
+  web3swift:
+    :commit: 56705bbd4bc4cdeb318b38cee44d921598f1bca3
+    :git: https://git.cyberdust.com/sameer/web3swift.git
 
 SPEC CHECKSUMS:
-  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   CryptoSwift: 4b07d5b508c1eb67bfa314a727b705f8048a85de
-  EtherS: 8d43d3d08dbbe0f613046f7c7b8c66fbfd0f7669
   Geth: 45a08eeef7a20e58dfc09a455563ffe210941a96
+  web3swift: 18c78fc84eb688abae84da25507fbcb799e68898
 
-PODFILE CHECKSUM: fe45ee20d726d4623868db317561fc8ea60d314f
+PODFILE CHECKSUM: 2af7b4e6bb08582cb764fac3dbc78ad90b5dd4ac
 
 COCOAPODS: 1.4.0

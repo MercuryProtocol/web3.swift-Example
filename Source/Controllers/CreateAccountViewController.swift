@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import EtherS
+import web3swift
 
 class CreateAccountViewController: UIViewController {
     private let _toTransferSegueIdentifier = "createAccountToTransferSegue"

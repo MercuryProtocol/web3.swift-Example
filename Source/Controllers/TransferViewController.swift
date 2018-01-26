@@ -8,7 +8,7 @@
 
 import UIKit
 import Geth
-import EtherS
+import web3swift
 import Alamofire
 
 class TransferViewController: UIViewController {
@@ -80,12 +80,12 @@ extension TransferViewController {
     
     fileprivate func _transfer(contractAddress: GethAddress, toAccountAddress: GethAddress, amount: GethBigInt) {
         let transferFunction = EthFunction(name: Constants.transferFunctionName, inputParameters: [toAccountAddress, amount])
-        let encodedTransferFunction = EtherS.encode(transferFunction)
+        let encodedTransferFunction = web3swift.encode(transferFunction)
         
         do {
             let nonce: Int64 = 4 // Update this to valid nonce
             
-            let signedTransaction = EtherS.sign(address: contractAddress, encodedFunctionData: encodedTransferFunction, nonce: nonce, gasLimit: Constants.gasLimit, gasPrice: Constants.gasPrice)
+            let signedTransaction = web3swift.sign(address: contractAddress, encodedFunctionData: encodedTransferFunction, nonce: nonce, gasLimit: Constants.gasLimit, gasPrice: Constants.gasPrice)
             
             if let signedTransactionData = try signedTransaction?.encodeRLP() {
                 let encodedSignedTransaction = signedTransactionData.base64EncodedString()
