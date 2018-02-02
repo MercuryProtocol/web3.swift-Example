@@ -14,6 +14,10 @@
 		427BDE2B2016D5490054F870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427BDE292016D5490054F870 /* LaunchScreen.storyboard */; };
 		427BDE3E20181D060054F870 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427BDE3D20181D060054F870 /* CreateAccountViewController.swift */; };
 		5E9E25C1DFB78FB40DE0F6DE /* Pods_web3SwiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E011757676448119992E9DE2 /* Pods_web3SwiftExample.framework */; };
+		CAB5C6B220252B3700E1A379 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CAB5C6B120252B3700E1A379 /* README.md */; };
+		CAB5C6B520252B5900E1A379 /* CONTRIBUTING.md in Resources */ = {isa = PBXBuildFile; fileRef = CAB5C6B320252B5900E1A379 /* CONTRIBUTING.md */; };
+		CAB5C6B620252B5900E1A379 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = CAB5C6B420252B5900E1A379 /* CHANGELOG.md */; };
+		CAB5C6B920252C8E00E1A379 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CAB5C6B820252C8E00E1A379 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		427BDE2C2016D5490054F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		427BDE3D20181D060054F870 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		67315140CC2F0E572578E11C /* Pods-web3SwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-web3SwiftExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-web3SwiftExample/Pods-web3SwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
+		CAB5C6B120252B3700E1A379 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CAB5C6B320252B5900E1A379 /* CONTRIBUTING.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		CAB5C6B420252B5900E1A379 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		CAB5C6B820252C8E00E1A379 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E011757676448119992E9DE2 /* Pods_web3SwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_web3SwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -45,6 +53,8 @@
 		427BDE142016D5490054F870 = {
 			isa = PBXGroup;
 			children = (
+				CAB5C6B720252C7E00E1A379 /* Deployment */,
+				CAB5C6B020252B1D00E1A379 /* Documentation */,
 				427BDE1F2016D5490054F870 /* Source */,
 				427BDE1E2016D5490054F870 /* Products */,
 				E0B80567F816DC019AC48E71 /* Pods */,
@@ -96,6 +106,24 @@
 				E011757676448119992E9DE2 /* Pods_web3SwiftExample.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAB5C6B020252B1D00E1A379 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5C6B420252B5900E1A379 /* CHANGELOG.md */,
+				CAB5C6B320252B5900E1A379 /* CONTRIBUTING.md */,
+				CAB5C6B120252B3700E1A379 /* README.md */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		CAB5C6B720252C7E00E1A379 /* Deployment */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5C6B820252C8E00E1A379 /* LICENSE */,
+			);
+			name = Deployment;
 			sourceTree = "<group>";
 		};
 		E0B80567F816DC019AC48E71 /* Pods */ = {
@@ -170,7 +198,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				427BDE2B2016D5490054F870 /* LaunchScreen.storyboard in Resources */,
+				CAB5C6B620252B5900E1A379 /* CHANGELOG.md in Resources */,
 				427BDE282016D5490054F870 /* Assets.xcassets in Resources */,
+				CAB5C6B920252C8E00E1A379 /* LICENSE in Resources */,
+				CAB5C6B520252B5900E1A379 /* CONTRIBUTING.md in Resources */,
+				CAB5C6B220252B3700E1A379 /* README.md in Resources */,
 				427BDE262016D5490054F870 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

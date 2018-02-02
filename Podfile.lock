@@ -2,30 +2,30 @@ PODS:
   - Alamofire (4.5.0)
   - CryptoSwift (0.8.1)
   - Geth (1.7.3)
-  - web3swift (0.0.6):
+  - web3swift (0.0.8):
     - CryptoSwift
     - Geth
 
 DEPENDENCIES:
   - Alamofire (= 4.5)
-  - web3swift (from `https://git.cyberdust.com/sameer/web3swift.git`, branch `master`)
+  - web3swift (from `https://github.com/MercuryProtocol/web3.swift.git`, branch `master`)
 
 EXTERNAL SOURCES:
   web3swift:
     :branch: master
-    :git: https://git.cyberdust.com/sameer/web3swift.git
+    :git: https://github.com/MercuryProtocol/web3.swift.git
 
 CHECKOUT OPTIONS:
   web3swift:
-    :commit: 56705bbd4bc4cdeb318b38cee44d921598f1bca3
-    :git: https://git.cyberdust.com/sameer/web3swift.git
+    :commit: 22ff35728221e0d2137c07e9581c3866cf17509a
+    :git: https://github.com/MercuryProtocol/web3.swift.git
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   CryptoSwift: 4b07d5b508c1eb67bfa314a727b705f8048a85de
   Geth: 45a08eeef7a20e58dfc09a455563ffe210941a96
-  web3swift: 18c78fc84eb688abae84da25507fbcb799e68898
+  web3swift: 08f271e5beffd247124e3d65975cc70da56dbfad
 
-PODFILE CHECKSUM: 2af7b4e6bb08582cb764fac3dbc78ad90b5dd4ac
+PODFILE CHECKSUM: b63b707ca784bc3c5e995d2b6d8c6d684e7fd3b6
 
 COCOAPODS: 1.4.0
